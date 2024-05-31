@@ -9,3 +9,8 @@ def home():
 @app.route("/calculate")
 def calculate():
     return "Loan calculation placeholder"
+
+@app.route("/payments")
+def payments():
+    return "Payment tracking placeholder"
+
