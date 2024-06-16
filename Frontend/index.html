@@ -9,6 +9,8 @@
 </html>
 
 <link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+
 
 <form id="loanForm">
     <input placeholder="Loan Name" id="loanName" required>
@@ -17,3 +19,11 @@
     <input type="number" placeholder="Term (months)" id="term" required>
     <button type="submit">Add Loan</button>
 </form>
+
+<form id="paymentForm">
+    <input placeholder="Loan ID" id="loanId" required>
+    <input type="number" placeholder="Amount" id="amount" required>
+    <input type="date" id="date" required>
+    <button type="submit">Add Payment</button>
+</form>
+
