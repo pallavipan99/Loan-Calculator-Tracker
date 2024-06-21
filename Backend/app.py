@@ -14,3 +14,11 @@ def calculate():
 def payments():
     return "Payment tracking placeholder"
 
+loans = []
+
+@app.route("/add_loan", methods=["POST"])
+def add_loan():
+    from flask import request, jsonify
+    data = request.json
+    loans.append(data)
+    return jsonify({"message": "Loan added", "loan": data})
