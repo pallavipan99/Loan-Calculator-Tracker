@@ -22,3 +22,12 @@ def add_loan():
     data = request.json
     loans.append(data)
     return jsonify({"message": "Loan added", "loan": data})
+
+payments_list = []
+
+@app.route("/add_payment", methods=["POST"])
+def add_payment():
+    from flask import request, jsonify
+    data = request.json
+    payments_list.append(data)
+    return jsonify({"message": "Payment added", "payment": data})
