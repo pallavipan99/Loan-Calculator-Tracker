@@ -31,3 +31,6 @@ def add_payment():
     data = request.json
     payments_list.append(data)
     return jsonify({"message": "Payment added", "payment": data})
+
+def calculate_interest(principal, rate, term):
+    return principal * rate / 100 * term / 12
