@@ -34,3 +34,7 @@ def add_payment():
 
 def calculate_interest(principal, rate, term):
     return principal * rate / 100 * term / 12
+
+@app.route("/loan_history")
+def loan_history():
+    return {"loans": loans, "payments": payments_list}
